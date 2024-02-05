@@ -1,0 +1,17 @@
+<%= form_with(model: sprint) do |form| %>
+  <% if sprint.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sprint.errors.count, "error") %> prohibited this sprint from being saved:</h2>
+
+      <ul>
+        <% sprint.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
