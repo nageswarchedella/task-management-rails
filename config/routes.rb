@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "dashboard#home"
   resources :users
   resources :sprints
   resources :projects

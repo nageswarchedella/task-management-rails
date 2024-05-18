@@ -1,0 +1,1 @@
+"build": "webpack --config ./config/webpack/webpack.config.js"
